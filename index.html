@@ -5,15 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/> <!--it's a CSS file that helps even out all differences between browsers-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>  <!--for social icons down at the bottom of the webpage-->
     <link rel="stylesheet" href="resources/css/index.css"
   </head>
   <body>
-    <!--Banner section-->
-    <div>
-    <h1>Project's landing page</h1>
-    <img src="resources/img/AntonLogo-03.png" alt="My programming logo" />
-    <h2>Welcome!</h2>
-    <p>Come and see more!</p>
+    <header>
+      <div class="logo">
+        <img src="/resources/img/AntonLogo.png" alt=""/>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav_list">
+          <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="#services" class="nav_link">My services</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">About me</a></li>
+          <li class="nav_item"><a href="#" class="nav_link">My work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <!--Introduction-->
+    <section class="intro" id="home"> <!--NOTE: CLASSES FOR STYLING IDS FOR ANCHORING (LINKS)-->
+      <h1 class="section__title section__title-intro">
+        Hi, I am <strong>Anton Martinez</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">project of Full stack dev</p>
+      <img src="/resources/img/AntonPhoto.jpeg" alt="a picture of Anton kinda smiling">
+    </section>
+
+
+    <!--My services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+      <div class="service">
+        <h3></h3>
+        <p></p>
+      </div> <!-- / service -->
+
+      <div class="service">
+        <h3></h3>
+        <p></p>
+      </div> <!-- / service -->
+
+      <div class="service">
+        <h3></h3>
+        <p></p>
+      </div> <!-- / service -->
+    </div> <!-- / services-->
+
+
+    <a href="#work" class="btn"> My work</a>
+  </section>
+
+
+  <!--About me-->
+  <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__title__subtitle--about"></p>
+
+    <div class="about-me__body">
+      <p></p>
+      <p></p>
     </div>
+
+    <img src="" alt="Anton second picture"/>
+  </section>
+
+
+  <!-- My work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title">My work</h2>
+    <p class="section__subtitle"></p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio__item">
+        <img src="#" alt="" class="portfolio__img"/>
+      </a>
+
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio__item">
+        <img src="#" alt="" class="portfolio__img"/>
+      </a>
+
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio__item">
+        <img src="#" alt="" class="portfolio__img"/>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <a href="mailto:anton.martinez.94@gmail.com" class="footer-link">anton.martinez.94@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com" target="_blank">a</a></li>
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com" target="_blank">b</a></li>
+      <li class="social-list__item"><a class="social-list__link" target="_blank">c</a></li>
+      <li class="social-list__item"><a class="social-list__link" target="_blank">d</a></li>
+    </ul>
+  </footer>
+
   </body>
 </html>
